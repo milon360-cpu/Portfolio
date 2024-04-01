@@ -1,0 +1,81 @@
+.form-group
+{
+    padding: 10px 0px;
+}
+.form-group input
+{
+    margin: 10px 10px;
+    width: 47%;
+    height: 45px;
+    padding:5px 20px;
+    border-radius: 20px;
+    background-color:#252525 ;
+    outline: none;
+}
+.form-group input,textarea::placeholder
+{
+    opacity: .50;
+}
+.form-group textarea
+{
+    margin: 30px 10px;
+    width: 97%;
+    height: 200px;
+    padding:15px 20px;
+    border-radius: 20px;
+    background-color:#1B1B1B;
+    outline: none;
+}
+.form-group button 
+{
+   width: 210px;
+   border: 1px solid #FFB400;
+   height: 50px;
+   margin-left: 10px;
+   border-radius: 30px;
+   padding-left: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+}
+.send-message-icon 
+{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFB400;
+    border-radius: 50px;
+    
+}
+.form-group button::after
+{
+    position: absolute;
+    content: '';
+    display:'block';
+    height: 50px;
+    width: 0px;
+    background-color: #FFB400;
+    left:0;
+    border-radius: 30px;
+    transition: .5s all;
+    z-index: -1;
+} 
+.form-group button:hover::after
+{
+    width: 210px;
+}
+
+@media screen and (max-width:996px) 
+{
+    .form-group input
+    {
+        width: 98%;
+    }
+    .form-group textarea
+    {
+        width: 98%;
+    }
+}

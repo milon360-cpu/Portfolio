@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.top-header-container
+{
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.top-header-container h2 
+{
+    visibility: hidden;
+    cursor: pointer;
+    color: #FFB400;
+    border: 1px solid rgba(255, 255, 255, 0.523);
+    padding: 5px;
+    border-radius: 5px;
+}
+.drawer-container 
+{
+ 
+   position: relative;
+}
+.close-icon 
+{
+    color: #FFB400;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+    transition: .3s all;
+
+}
+.close-icon:hover 
+{
+    color: white;
+}
+@media screen and (max-width:996px)
+{
+    .top-header-container h2 
+    {
+        visibility: visible;
+    }
+    .top-header-container
+    {
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,22 @@
+.contact-info h3
+{
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color:#FFB400;
+}
+.contact-info p 
+{
+    opacity: .50;
+}
+.mail-icon-container 
+{
+    display: flex;
+    align-items: center;
+}
+.mail-icon 
+{
+    font-size: 35px !important;
+    margin-right: 10px;
+    color: #FFB400;
+}

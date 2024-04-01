@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+.profile
+{
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.203);
+  border-radius: 5px ;
+  background-color: #1B1B1B;
+}
+.profile-header h1 
+{
+  font-size: 45px;
+}
+.btn-container
+{
+  width: 230px;
+  border: 1px solid #FFB400;
+  height: 50px;
+  margin-left: 10px;
+  border-radius: 30px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 30px;
+}
+.btn-container::after
+{
+  position: absolute;
+  content: '';
+  display:'block';
+  height: 50px;
+  width: 0px;
+  background-color: #FFB400;
+  left:0;
+  border-radius: 30px;
+  transition: .5s all;
+  z-index: -1;
+}
+.btn-container:hover::after
+{
+  width: 230px;
+}
+.arrow-icon
+{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFB400;
+    border-radius: 50px;
+}
+
+
+.light-mood-icon-container 
+{
+  background-color: rgb(31 41 55);
+  height: 50px;
+  width: 220px;
+  border-radius: 50px;
+  display: block;
+  color: #FFB439;
+  border: 1px solid #ffb339aa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  position: relative;
+  transition: .4s all;
+}
+.download-icon 
+{
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: #FFB400;
+  color: white;
+  padding: 7px;
+  /* z-index: 100; */
+}
+.light-mood-icon-container:hover 
+{
+  color: white;
+}
+
+@media screen and (max-width:650px) 
+{
+  .profile-header h1 
+  {
+    font-size: 35px;
+  }
+}

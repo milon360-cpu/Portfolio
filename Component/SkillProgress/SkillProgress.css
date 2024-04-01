@@ -1,0 +1,24 @@
+.progress-container 
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.skill-card 
+{
+    width: 100px;
+    text-align: center;
+}
+.skill-card h4 
+{
+    margin-top: 10px;
+    letter-spacing: 2px;
+    opacity: .35;
+}
+.top-container 
+{
+
+}
+.bottom-container 
+{
+    margin-top: 40px;
+}
