@@ -4,7 +4,7 @@ import "./contact.css"
 import "../about/about.css"
 import ContactIcon from '@/Component/ContactIcon/page';
 import ContactForm from '@/Component/ContactForm/page';
-import Fade from 'react-reveal/Fade';
+import {Fade} from 'react-awesome-reveal';
 const Contact = () => {
     return (
         <div className='about-container container m-auto'>

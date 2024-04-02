@@ -3,7 +3,7 @@ import profileImg from "../public/img.png"
 import Image from "next/image";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import { useRouter } from "next/navigation";
-import Fade from 'react-reveal/Fade';
+import {Fade} from 'react-awesome-reveal';
 export default function Home() {
   const router = useRouter();
   return (

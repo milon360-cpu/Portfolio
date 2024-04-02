@@ -3,7 +3,7 @@ import React from 'react';
 import "./about.css"
 import SkillProgress from '@/Component/SkillProgress/page';
 import TimeLine from '@/Component/TimeLine/page';
-import Fade from 'react-reveal/Fade';
+import {Fade} from 'react-awesome-reveal';
 const About = () => {
     return (
         <div className='about-container container m-auto'>
