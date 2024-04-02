@@ -93,3 +93,22 @@
 }
 
 /* Contact Page Style Started Here  */
+
+@media screen and (max-width:605px) 
+{
+
+    .left-info-container
+    {
+        width: 100%;
+        padding-right: 25px;
+    }
+    .right-info-container
+    {
+        width: 100%;
+        padding-right: 25px;
+    }
+    .personal-details p 
+    {
+        width: 100%!important;
+    }
+}
